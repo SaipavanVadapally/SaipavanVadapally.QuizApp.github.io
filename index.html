@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+		<link rel="stylesheet" href="style.css" />
+		<!-- Font Awesome Library is used for Leaderboard Icon -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		/>
+		<title>Codedamn - Quiz Project</title>
+	</head>
+
+	<body>
+		<header>
+			<div class="quiz-container">
+				<h1>Codedamn Quiz</h1>
+				<a id="leaderboard" href="#"
+					>View Highscores <i class="fas fa-hand-point-left fa-lg"></i
+				></a>
+			</div>
+		</header>
+		<main>
+			<div class="quiz-container" id="quizContainer">
+				<div id="quizIntro">
+					<h2>Start your Project</h2>
+					<p>
+						Welcome to the Codedamn Quiz. Test your knowledge and
+						have fun!
+					</p>
+					<button id="startQuiz">Start Quiz</button>
+					<div id="leaderboardContainer"></div>
+				</div>
+				<div id="quizContent" class="hidden">
+					<h2 id="questionText"></h2>
+					<div id="optionsContainer">
+						<!-- Options will be added dynamically here using JavaScript -->
+					</div>
+					<button id="nextQuestion">Next Question</button>
+				</div>
+			</div>
+		</main>
+		<script src="App.js"></script>
+	</body>
+</html>
